@@ -130,6 +130,8 @@ font-family: consolas;
     height:200px;
     width:200px;
     margin:20px auto;
+    padding-right:0;
+    right:20px;
   }
   .three{
     margin:0;
@@ -153,8 +155,7 @@ font-family: consolas;
   .initial-text{
     font-size:rem;
     writing-mode: vertical-rl;
-    margin:0;
-    padding:0;
+
   }
   .closing-bracket, .open-bracket{
     font-size: 150px;
@@ -164,7 +165,9 @@ font-family: consolas;
     margin-left:0;
   }
   .closing-bracket{
-    margin:0;
-    padding-left:55px;
+    margin:0 auto;
+    left:20px;
+    /* padding-right:0;
+    padding-left:55px; */
   }
 }
