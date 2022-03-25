@@ -112,7 +112,7 @@ font-family: consolas;
   margin-bottom: 0;
 
 }
-@media (max-width: 800px){
+@media (max-width: 750px){
   .navbar-nav{
     flex-direction: row;
   }
@@ -122,11 +122,18 @@ font-family: consolas;
   .nav-item{
     margin-right: 20px;
   }
+  .contact-info{
+    padding-left:30px;
+  }
   .outer-container{
     position:relative;
     height:200px;
     width:200px;
     margin:20px auto;
+  }
+  .three{
+    margin:0;
+    padding:0;
   }
   .image-container{
     height:150px;
@@ -146,6 +153,8 @@ font-family: consolas;
   .initial-text{
     font-size:rem;
     writing-mode: vertical-rl;
+    margin:0;
+    padding:0;
   }
   .closing-bracket, .open-bracket{
     font-size: 150px;
