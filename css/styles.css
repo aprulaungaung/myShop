@@ -123,8 +123,10 @@ font-family: consolas;
     margin-right: 20px;
   }
   .outer-container{
+    position:relative;
     height:200px;
     width:200px;
+    margin:20px auto;
   }
   .image-container{
     height:150px;
@@ -142,14 +144,18 @@ font-family: consolas;
     color:smok-white;
   }
   .initial-text{
-    font-size:1.2rem;
+    font-size:rem;
+    writing-mode: vertical-rl;
   }
   .closing-bracket, .open-bracket{
     font-size: 150px;
-
+-
+  }
+  .open-bracket{
+    margin-left:0;
   }
   .closing-bracket{
     margin:0;
-    padding-left:50px;
+    padding-left:55px;
   }
 }
