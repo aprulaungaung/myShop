@@ -10,38 +10,39 @@ font-family: consolas;
 }
 /* header section */
 .title-bar{
+  position: relative;
+  top:0;
+  left:0;
   display: flex;
   flex-direction: row;
 }
 
 .initial-text{
   position: relative;
-  font-size: 4.5rem;
-  top: 3%;
-  padding-left:20%;
-  color:#C3E5AE;
-  /* opacity:0.5; */
+  font-size: 6rem;
+  margin:50% auto;
+  padding-left:30px;
 }
 .open-bracket{
-  font-size: 200px;
-  font-weight:bold;
+  margin-left: 120px;
+}
+.initial-text, .open-bracket{
+  position: relative;
+  display: inline-block;
   color:#C3E5AE;
-  opacity:0.5;
-  margin-top:10px;
-  margin-left:40%;
-  margin-bottom:30px;
+
 }
 .closing-bracket{
   position: relative;
-  font-weight:bold;
-    color:#C3E5AE;
-  opacity:0.5;
   padding-right: 30px;
   margin-bottom: 30px;
-  font-size: 200px;
-  top:3%;
 }
-
+.open-bracket, .closing-bracket{
+  font-size: 200px;
+  font-weight: bold;
+    color:#C3E5AE;
+    opacity:0.5;
+}
 .outer-container{
   position: relative;
   height: 250px;
@@ -99,21 +100,33 @@ font-family: consolas;
   display: inline;
 
 }
-.code-icon{
-  position: absolute;
-  color:white;
-  transform-origin: ;
-}
-.contact-info{
+.one{
   position: relative;
+  top:0;
+  left:0:
+  margin:0
+}
+.message-box{
+ position: absolute;
+  display: flex;
+  flex-direction: row;
+  width:600px;
+  margin-left:30px;
+  bottom: 0;
+  padding:0;
+
+}
+
+.contact-info{
+  position:relative;
   width:100%;
   color:blue;
   opacity: 0.5;
-  margin: 0;
-  top:230px;
-
+  display: inline;
+ padding: 0 20px;
+ margin-right: 20px;
 }
-@media (max-width: 750px){
+@media (max-width: 1010px){
   .navbar-nav{
     flex-direction: row;
   }
@@ -123,10 +136,12 @@ font-family: consolas;
   .nav-item{
     margin-right: 20px;
   }
-  .contact-info{
-    top:0;
-    padding-left:30px;
-  }
+
+
+.contact-info{
+  margin: 0;
+  padding: 0;
+}
   .outer-container{
     position:relative;
     height:200px;
@@ -135,10 +150,7 @@ font-family: consolas;
     padding-right:0;
     right:20px;
   }
-  .three{
-    margin:0;
-    padding:0;
-  }
+
   .image-container{
     height:150px;
     width:150px;
@@ -155,21 +167,20 @@ font-family: consolas;
     color:smok-white;
   }
   .initial-text{
-    font-size:rem;
+    font-size:4rem;
     writing-mode: vertical-rl;
+    padding-left:20px;
 
   }
   .closing-bracket, .open-bracket{
     font-size: 150px;
+    top:5%;
 -
   }
   .open-bracket{
-    margin-left:0;
+  margin-left:2px;
   }
   .closing-bracket{
     margin:0 auto;
-    left:50px;
-    /* padding-right:0;
-    padding-left:55px; */
+    left:3px;
   }
-}
