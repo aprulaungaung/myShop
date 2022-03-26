@@ -109,7 +109,8 @@ font-family: consolas;
   width:100%;
   color:blue;
   opacity: 0.5;
-  margin-bottom: 0;
+  margin: 0;
+  top:230px;
 
 }
 @media (max-width: 750px){
@@ -123,6 +124,7 @@ font-family: consolas;
     margin-right: 20px;
   }
   .contact-info{
+    top:0;
     padding-left:30px;
   }
   .outer-container{
